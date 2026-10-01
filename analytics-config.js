@@ -1,1 +1,1 @@
-window.ANALYTICS_CONFIG = {liveInternet:false, mailId:"", ramblerId:"7752646"};
+window.ANALYTICS_CONFIG = {liveInternet:true, mailId:"", ramblerId:"7752646"};
