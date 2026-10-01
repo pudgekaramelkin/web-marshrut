@@ -1,0 +1,14 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Практический маршрут по HTML, CSS и JavaScript для самостоятельного обучения"><title>CSS и оформление · Веб-маршрут</title><link rel="stylesheet" href="style.css"></head><body><header><a class="brand" href="index.html"><i>↗</i>Веб-маршрут</a><nav aria-label="Основная навигация"><a href="index.html" >Главная</a><a href="html.html" >HTML</a><a href="css.html" aria-current="page">CSS</a><a href="javascript.html" >JavaScript</a><a href="toolkit.html" >Практика</a></nav></header><main><article class="article"><span class="eyebrow">02 / Оформление</span><h1>Дайте содержимому<br>пространство</h1><p class="lead">Хорошее оформление помогает читать. Начните с ширины текста, межстрочного интервала и понятной иерархии.</p><h2>Три базовые настройки</h2><p>Ограничьте ширину основного блока, задайте удобный интервал между строками и добавьте поля по краям. Эти изменения уже делают длинный текст заметно удобнее.</p><pre>body {
+  margin: 0;
+  font: 18px/1.6 system-ui, sans-serif;
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px;
+}</pre><h2>Сетка, которая умеет перестраиваться</h2><p>Для карточек удобно использовать CSS Grid. Вместо жесткой ширины задайте минимальный размер, а браузер сам распределит доступное пространство.</p><pre>.cards {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}</pre><h2>Проверьте мобильный экран</h2><p>Уменьшите окно браузера. Текст не должен обрезаться, кнопки должны оставаться доступными, а страница не должна требовать горизонтальной прокрутки. Длинный код допустимо прокручивать внутри отдельного блока.</p><h2>Попробуйте сами</h2><p>Добавьте к своей странице файл <code>style.css</code>. Настройте фон, цвет текста и отступы. Затем откройте ее на телефоне или в режиме мобильного устройства браузера.</p><div class="actions"><a class="button" href="javascript.html">Дальше: взаимодействие →</a></div><p class="sources">Для углубления: <a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_grid_layout">MDN: CSS Grid Layout</a>.</p></article></main><footer><div class="foot"><span>Веб-маршрут · От первой строки до своей страницы</span><span>Учебный проект · 2026</span></div><div id="counters"></div><details><summary>О данных и приватности</summary><p>Тест и чек-лист работают в браузере. Сайт не запрашивает имя, почту или телефон. При подключении внешней аналитики сведения о посещении обрабатываются соответствующим сервисом. Текущее состояние подключения: <span id="analytics-status">внешние счетчики не подключены</span>.</p></details></footer><script src="analytics-config.js"></script><script src="analytics.js"></script><script src="app.js"></script></body></html>
